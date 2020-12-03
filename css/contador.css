@@ -1,0 +1,289 @@
+.contenedor {
+    display: flex;
+  justify-content: center;
+  
+
+}
+.item{
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 8px 8px 16px rgba(165, 177,198, 0.8),
+    -8px -8px 16px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+div#habilidades{
+
+    margin: auto;
+    width:960px;
+    height: 19px;
+    
+    -webkit-border-radius: 7px;
+    -moz-border-radios:7px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+
+-webkit-box-shadow: 0px 2px 4px #b4b4b4;
+}
+
+
+/*Habilidades*/
+
+
+.contenido{
+    position: relative; 
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: auto;
+}
+
+.contenido .card{
+    position: relative;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+    border-radius: .8rem;
+    text-align: center;
+    transition: .5s;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+
+.contenido .card.html{
+
+    background: #F3742F;
+}
+
+.contenido .card.css{
+    background: #0394D2;
+}
+.contenido .card.js{
+    background: #F7DF1E;
+}
+
+.contenido .card.php{
+    background: #8993C1;
+}
+
+.contenido .card.mysql{
+    background: #B4B5BA;
+}
+
+
+
+.contenido .card:hover{
+    transform: translateY(-1rem);
+    box-shadow: 0 1.5rem 3.5rem rgba(0,0,0,.5);
+}
+
+.porcentaje{
+
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    z-index: 40;
+    background: #fff;
+    margin-left: auto;
+  margin-right: auto;
+
+}
+
+.card.html .porcentaje{
+    background: #F3742F;
+}
+.card.css .porcentaje{
+    background:#0394D2;
+}
+.card.js .porcentaje{
+    background: #F7DF1E;
+}
+.card.php .porcentaje{
+    background: #8993C1;
+}
+.card.mysql .porcentaje{
+    background: #B4B5BA;
+}
+
+
+.porcentaje .numero{
+
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.porcentaje .numero h2{
+    color: #00293c;
+    font-weight:100;
+    font-size: 4rem;
+    transition: .5s;
+    opacity:0;
+}
+
+.porcentaje .numero h2 span{
+    font-size: 1.1rem;
+    color: #777;
+    transition: .5s;
+}
+
+.card:hover .porcentaje .numero h2{
+    color: #fff;
+    font-size: 4rem;
+    opacity: 1;
+    position: center;
+}
+
+.card:hover .porcentaje .numero h2 span{
+    color: #fff;
+}
+
+.texto{
+    position: relative;
+    color: #00293c;
+    font-weight: 90;
+    font-size: 2rem;
+    margin-top: 1rem;
+    letter-spacing:.1rem;
+    text-transform: uppercase;
+    transition:.5s;
+}
+.card:hover .texto{
+    color: #f1f3ce;
+}
+
+svg{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    z-index: 100;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill:none;
+    stroke: #262626;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(.5rem, .5rem);
+}
+
+svg circle:nth-child(2){
+    transition: 1.5s;
+    stroke-dashoffset: 440;
+    stroke-dasharray: 440;
+}
+.card:hover svg circle{
+    stroke: #fff;
+}
+
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke: #8845F4;
+}
+.card:hover:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc( 440 + (440 * 70) / 100);
+}
+
+
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke: #8845F4;
+}
+.card:hover:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc( 440 + (440 * 65) / 100);
+}
+
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke: #8845F4;
+}
+.card:hover:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc( 440 + (440 * 58) / 100);
+}
+
+
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke: #8845F4;
+}
+.card:hover:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc( 440 + (440 * 48) / 100);
+}
+
+
+.card:nth-child(5) svg circle:nth-child(2){
+    stroke: #8845F4;
+}
+.card:hover:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: calc( 440 + (440 * 48) / 100);
+}
+
+
+
+@media screen and (max-width:1200px){
+    .contenido .card{
+        width: 40%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .contenido .card{
+        width: 150%;
+        margin: 20px;       
+    }
+    
+}
+
+/*video*/
+.video{
+    
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+
+.video iframe{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    font-size: 1.11rem;
+}
+
+@media screen and (max-width:600px){
+    p{
+        font-size: .95rem;
+    }
+    
+}
